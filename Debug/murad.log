@@ -1,0 +1,10 @@
+﻿  Matrix.cpp
+C:\Users\Юра\source\repos\Murad\murad\Matrix.cpp(13,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Юра\source\repos\Murad\murad\Matrix.cpp(61,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Юра\source\repos\Murad\murad\Matrix.cpp(89,19): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Юра\source\repos\Murad\murad\Matrix.cpp(91,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Юра\source\repos\Murad\murad\Matrix.cpp(135,27): warning C4018: <: несоответствие типов со знаком и без знака
+  murad.cpp
+C:\Users\Юра\source\repos\Murad\murad\murad.cpp(70,22): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  murad.vcxproj -> C:\Users\Юра\source\repos\Murad\Debug\murad.exe
