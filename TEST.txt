@@ -1,0 +1,4 @@
+murad.exe C:\Users\Юра\source\repos\Murad\murad\M1.txt C:\Users\Юра\source\repos\Murad\murad\M2.txt *
+murad.exe C:\Users\Юра\source\repos\Murad\murad\M1.txt C:\Users\Юра\source\repos\Murad\murad\M2.txt +
+murad.exe C:\Users\Юра\source\repos\Murad\murad\M1.txt C:\Users\Юра\source\repos\Murad\murad\M2.txt -
+murad.exe C:\Users\Юра\source\repos\Murad\murad\M1.txt C:\Users\Юра\source\repos\Murad\murad\M2.txt trans
