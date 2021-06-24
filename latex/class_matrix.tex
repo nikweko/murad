@@ -1,0 +1,156 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix Class Reference}
+\label{class_matrix}\index{Matrix@{Matrix}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matrix_adf4e47b9d1d5c6acf07f91447d43b8fd}\label{class_matrix_adf4e47b9d1d5c6acf07f91447d43b8fd}} 
+{\bfseries Matrix} (int, int, double)
+\item 
+\mbox{\Hypertarget{class_matrix_a0842c2dd6a0a6bfce058069f41989957}\label{class_matrix_a0842c2dd6a0a6bfce058069f41989957}} 
+{\bfseries Matrix} (const char $\ast$)
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_a1f404b828aa475e45d5d24ae71999212}{operator+}} (\mbox{\hyperlink{class_matrix}{Matrix}} \&)
+\begin{DoxyCompactList}\small\item\em Функция сложение двух матриц \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_a59b89e695219557c81c0764b4d9c3e60}{operator-\/}} (\mbox{\hyperlink{class_matrix}{Matrix}} \&)
+\begin{DoxyCompactList}\small\item\em Функция вычитание двух матриц \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_a5eb1f8bab67dfc83c4f11ebd6d1490d9}{operator$\ast$}} (\mbox{\hyperlink{class_matrix}{Matrix}} \&)
+\begin{DoxyCompactList}\small\item\em Функция умножения двух матриц \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_ae23f817021383e3c8636a714dcba1d21}{transpose}} ()
+\begin{DoxyCompactList}\small\item\em Функция транспонирование матрицы \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{class_matrix_ad85610f67a594607e360652f2170015e}{operator()}} (const int \&, const int \&)
+\begin{DoxyCompactList}\small\item\em Фунция вернет элемент матрицы по индексам строки и столбца A(x,y) \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_matrix_a9eb68e94c4ac5213e97188d99a21da10}{get\+Rows}} () const
+\begin{DoxyCompactList}\small\item\em Фунция вернет кол-\/во строк \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_matrix_aa716da545a2043ad41ee276806976883}{get\+Cols}} () const
+\begin{DoxyCompactList}\small\item\em Фунция вернет кол-\/во столбцов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matrix_abad4f764e17de0076ecdd89ffd1dbf50}\label{class_matrix_abad4f764e17de0076ecdd89ffd1dbf50}} 
+void \mbox{\hyperlink{class_matrix_abad4f764e17de0076ecdd89ffd1dbf50}{print}} () const
+\begin{DoxyCompactList}\small\item\em Функция печати матрицы в консоль \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_aa716da545a2043ad41ee276806976883}\label{class_matrix_aa716da545a2043ad41ee276806976883}} 
+\index{Matrix@{Matrix}!getCols@{getCols}}
+\index{getCols@{getCols}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily unsigned Matrix\+::get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Фунция вернет кол-\/во столбцов 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+row\+Size -\/ количество столбцов в матрице 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a9eb68e94c4ac5213e97188d99a21da10}\label{class_matrix_a9eb68e94c4ac5213e97188d99a21da10}} 
+\index{Matrix@{Matrix}!getRows@{getRows}}
+\index{getRows@{getRows}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily unsigned Matrix\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Фунция вернет кол-\/во строк 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+row\+Size -\/ количество строк в матрице 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_ad85610f67a594607e360652f2170015e}\label{class_matrix_ad85610f67a594607e360652f2170015e}} 
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{const int \&}]{row\+No,  }\item[{const int \&}]{col\+No }\end{DoxyParamCaption})}
+
+
+
+Фунция вернет элемент матрицы по индексам строки и столбца A(x,y) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row\+No} & -\/ номер строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em col\+No} & -\/ номер столбца \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_matrix}{Matrix}}\mbox{[}row\+No, col\+No\mbox{]} -\/ элемент матрицы находящийся на строке row\+No и столбце col\+No 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a5eb1f8bab67dfc83c4f11ebd6d1490d9}\label{class_matrix_a5eb1f8bab67dfc83c4f11ebd6d1490d9}} 
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix}{Matrix}} Matrix\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}} \&}]{B }\end{DoxyParamCaption})}
+
+
+
+Функция умножения двух матриц 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_matrix}{Matrix}} -\/ Умножение двух матриц 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a1f404b828aa475e45d5d24ae71999212}\label{class_matrix_a1f404b828aa475e45d5d24ae71999212}} 
+\index{Matrix@{Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix}{Matrix}} Matrix\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}} \&}]{B }\end{DoxyParamCaption})}
+
+
+
+Функция сложение двух матриц 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_matrix}{Matrix}} -\/ Сумма двух матриц 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_a59b89e695219557c81c0764b4d9c3e60}\label{class_matrix_a59b89e695219557c81c0764b4d9c3e60}} 
+\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix}{Matrix}} Matrix\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}} \&}]{B }\end{DoxyParamCaption})}
+
+
+
+Функция вычитание двух матриц 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{class_matrix}{Matrix}}} & -\/ Матрица \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_matrix}{Matrix}} -\/ Вычитание двух матриц 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matrix_ae23f817021383e3c8636a714dcba1d21}\label{class_matrix_ae23f817021383e3c8636a714dcba1d21}} 
+\index{Matrix@{Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix}{Matrix}} Matrix\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция транспонирование матрицы 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_matrix}{Matrix}} -\/ транспонированная матрица 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Matrix.\+h\item 
+Matrix.\+cpp\end{DoxyCompactItemize}
